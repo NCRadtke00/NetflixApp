@@ -21,7 +21,8 @@ function Banner() {
     }
 
     return (
-        <header >
+        <header className="banner" style={{ backgroundSize: "cover", backgroundImage: `url("https://image.tmdb.org/t/p/original/${moviebackdrop_path}")`, backgroundPosition: "center center", }}>
+
         </header>
      
     );
