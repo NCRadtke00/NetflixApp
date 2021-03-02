@@ -22,7 +22,17 @@ function Banner() {
 
     return (
         <header className="banner" style={{ backgroundSize: "cover", backgroundImage: `url("https://image.tmdb.org/t/p/original/${moviebackdrop_path}")`, backgroundPosition: "center center", }}>
-
+        <div className="banner__contents">
+            <h1 className="banner__title">
+            </h1>
+            <div className="banner__buttons">
+                <button className="banner__button">Play</button>
+                <button className="banner__button">My List</button>
+            </div>
+            <h3 className="banner__description">
+            </h3>
+        </div>
+        <div className="banner--fadeBottom"/>
         </header>
      
     );
