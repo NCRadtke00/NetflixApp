@@ -2,11 +2,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  padding: 20px;
-  justify-content: space-between;
   height: 30px;
+  padding: 20px;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
   /* this is for the animations */
   transition-timing-function: ease-in;
   transition: all 0.5s;
