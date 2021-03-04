@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import './App.css';
 import HomeScreen from "../src/components/HomeScreen/HomeScreen";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
