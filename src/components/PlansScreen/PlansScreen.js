@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import "./PlansScreen.css";
 import { selectUser } from '../../features/userSlice';
 import db from '../../firebase';
-import { loadStripe } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 
 function PlansScreen() {
     const [products, setProducts] = useState([]);
@@ -69,7 +69,7 @@ function PlansScreen() {
   
         if (sessionId) {
           const stripe = await loadStripe(
-            "pk_test_51HQMANKYY3oas86Fgs8StBB8rUDm63dXwSErGWlVWeosm5XI1PLERJNiXXSLQf6ucWHUWKqTbOVAtYo2hQxWO0NY005O0MNkeJ"
+            "pk_test_51Hn9DtFfxvFC7Iq0iyfNbG2W1WpvsrknMUcCIzwJ2DgWYEV1vMQInmx4inXyacbqE6WsXzScNYLZE2JUbWks4nwQ00owATw32J"
           );
           stripe.redirectToCheckout({ sessionId });
         }
@@ -104,8 +104,7 @@ function PlansScreen() {
                 <h5>{productData.name} </h5>
                 <h6>{productData.description}</h6>
               </div>
-              <button onClick={() => !isCurrentPackage && loadCheckout(productData.prices.priceId)}>
-                {isCurrentPackage ? "Current Package" : "Subscribe"}
+              <button onClick={() => !isCurrentPackage && loadCheckout(productData.prices.priceId)}>{isCurrentPackage ? "Current Package" : "Subscribe"}
               </button>
             </div>
           );
