@@ -20,6 +20,7 @@
 }
 .row__poster:hover {
   transform: scale(1.12);
+  opacity: 1;
 }
 .row__posterLarge {
   max-height: 250px;
