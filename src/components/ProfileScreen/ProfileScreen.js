@@ -8,7 +8,9 @@ import './ProfileScreen.css';
 
 function ProfileScreen() {
     const user = useSelector(selectUser);
+
     console.log(user);
+    
     return (
         <div className="profileScreen">
             <Nav />
