@@ -1,9 +1,11 @@
-
 .plansScreen__plan {
   display: flex;
   justify-content: space-between;
   opacity: 0.8;
   margin-bottom: 5px;
+}
+.plansScreen__plan:hover {
+  opacity: 1;
 }
 
 .plansScreen__info {
@@ -15,11 +17,10 @@
   padding: 5px;
   margin: 0;
 }
-
-.plansScreen__plan:hover {
-  opacity: 1;
+.plansScreen__info > h6 {
+  padding: 5px;
+  margin: 0;
 }
-
 .plansScreen__plan > button {
   padding: 5px 5px;
   height: 40px;
