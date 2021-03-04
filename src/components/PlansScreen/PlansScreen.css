@@ -4,6 +4,9 @@
   opacity: 0.8;
   margin-bottom: 5px;
 }
+.plansScreen__plan--disabled > button {
+  background-color: grey !important;
+}
 .plansScreen__plan:hover {
   opacity: 1;
 }

@@ -96,9 +96,7 @@ function PlansScreen() {
           return (
             <div
               key={productId}
-              className={`${
-                isCurrentPackage && "plansScreen__plan--disabled"
-              } plansScreen__plan`}
+              className={`${isCurrentPackage && "plansScreen__plan--disabled"} plansScreen__plan`}
             >
               <div className="plansScreen__info">
                 <h5>{productData.name} </h5>
