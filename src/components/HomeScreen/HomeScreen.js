@@ -1,8 +1,8 @@
 import React from 'react'
 import './HomeScreen.css';
 import Nav from "../Nav/Nav";
-import Row from "../Row/Row";
-import Banner from "../Banner/Banner";
+import Row from "../row/Row";
+import Banner from "../banner/Banner";
 import requests from "../../requests";
 
 

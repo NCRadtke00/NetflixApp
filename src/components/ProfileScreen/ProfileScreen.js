@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from '../../features/userSlice';
 import { auth } from '../../firebase';
 import Nav from '../Nav/Nav';
-import PlansScreen from "../PlansScreen/PlansScreen";
+import PlansScreen from "../plansScreen/PlansScreen";
 import './ProfileScreen.css';
 
 function ProfileScreen() {
