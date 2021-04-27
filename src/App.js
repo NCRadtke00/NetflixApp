@@ -4,9 +4,6 @@ import HomeScreen from "./components/homeScreen/HomeScreen";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoginScreen from "./components/LoginScreen/LoginScreen";
 import ProfileScreen from "./components/ProfileScreen/ProfileScreen";
-// import FeatureContainer from "./components/feature";
-// import FaqsContainer from "./components/accordion";
-// import FooterContainer from "./components/footer";
 
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
@@ -37,13 +34,6 @@ function App() {
       <Router>
         {!user ? (
           <LoginScreen />
-
-          
-            // <FeatureContainer />
-            // <FaqsContainer />
-            // <FooterContainer />
-          
-          
           
         ) : (
           <Switch>
