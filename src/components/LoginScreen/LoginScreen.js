@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import SignupScreen from "../signupScreen/SignupScreen";
+import SignupScreen from "../SignupScreen/SignupScreen";
 import "./LoginScreen.css";
-import { JumbotronContainer } from "../containers/jumbotron";
-import FaqsContainer from "../containers/Faqs";
-import { FooterContainer } from "../containers/footer";
+
+
 
 function LoginScreen() {
   const [signIn, setSignIn] = useState(false);
@@ -48,9 +47,7 @@ function LoginScreen() {
           </>
         )}
       </div>
-      <JumbotronContainer />
-      <FaqsContainer />
-      <FooterContainer />
+
     </div>
   );
 }
